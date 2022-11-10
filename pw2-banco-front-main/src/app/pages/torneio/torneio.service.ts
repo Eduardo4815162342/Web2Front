@@ -26,12 +26,8 @@ export class TorneioService {
   
     }
   
-    createTorneioIndividual(torneio: TorneioIndividual): Observable<TorneioIndividual> {
-      return this.http.post<TorneioIndividual>(environment.baseUrl + '/torneio/individual', torneio);
-    } 
-  
-    createTorneioEquipe(torneio: TorneioEquipe): Observable<TorneioEquipe> {
-      return this.http.post<TorneioEquipe>(environment.baseUrl + '/torneio/equipe', torneio);
+    createTorneio(torneio: Torneio, tipo: "individual" | "equipe"): Observable<Torneio> {
+      return this.http.post<Torneio>(environment.baseUrl + `/torneio/${tipo}`, torneio);
     } 
 
     showMessage(msg: string, IsError: boolean = false): void{

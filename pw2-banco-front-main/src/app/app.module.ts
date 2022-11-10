@@ -35,6 +35,8 @@ import { FuncionarioComponent } from './pages/funcionario/funcionario/funcionari
 import { FuncionarioCreateComponent } from './pages/funcionario/funcionario-create/funcionario-create.component';
 import { JogoComponent } from './pages/jogo/jogo/jogo.component';
 import { JogoCreateComponent } from './pages/jogo/jogo-create/jogo-create.component';
+import { JogadorPerfilJogoComponent } from './pages/jogador-perfil-jogo/jogador-perfil-jogo/jogador-perfil-jogo.component';
+import { JogadorPerfilJogoCreateComponent } from './pages/jogador-perfil-jogo/jogador-perfil-jogo-create/jogador-perfil-jogo-create.component';
 
 
 
@@ -57,7 +59,11 @@ import { JogoCreateComponent } from './pages/jogo/jogo-create/jogo-create.compon
     TorneiosComponent, 
     TorneioCreateComponent, 
     FuncionarioComponent, 
-    FuncionarioCreateComponent, JogoComponent, JogoCreateComponent, 
+    FuncionarioCreateComponent,
+    JogoComponent,
+    JogoCreateComponent,
+    JogadorPerfilJogoComponent, 
+    JogadorPerfilJogoCreateComponent, 
   ],
   imports: [
     ReactiveFormsModule,
