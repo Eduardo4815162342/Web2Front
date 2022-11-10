@@ -38,9 +38,10 @@ export class TorneioCreateComponent implements OnInit {
     this.form.markAllAsTouched();
     if(this.form.valid){
       const {tipo,...torneio} = this.form.value;
+      torneio.premiacao = Number(torneio.premiacao);
       this.torneioService.createTorneio(torneio, tipo)
       .pipe(
-        catchError((err) =>{
+        catchError((err) =>{ 
           this.torneioService.showMessage('Erro ao criar torneio', true);
           return err;
         })
