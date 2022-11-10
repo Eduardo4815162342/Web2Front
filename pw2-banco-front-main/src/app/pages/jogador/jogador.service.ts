@@ -26,7 +26,7 @@ list(): Observable<Jogador[]>{
 
   create(jogador: Jogador): Observable<Jogador> {
     return this.http.post<Jogador>(environment.baseUrl + this.baseApi, jogador);
-  }
+  } 
 
   showMessage(msg: string, IsError: boolean = false): void{
     this.snackBar.open(msg, 'X', {

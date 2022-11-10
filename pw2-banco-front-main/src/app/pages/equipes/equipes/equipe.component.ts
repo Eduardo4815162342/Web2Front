@@ -15,8 +15,8 @@ export class EquipeComponent implements OnInit {
   ngOnInit() {
   }
 
-  navigateToCityCreate(): void {
-  this.router.navigate(['equipe/create']);
+  navigateToEquipeCreate(): void {
+    this.router.navigate(['equipe/create']);
   }
 
 }

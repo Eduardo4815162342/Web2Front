@@ -13,7 +13,7 @@ export class TorneiosComponent implements OnInit {
   ngOnInit() {
 
   }
-  navigateToStateCreate(): void {
-    this.router.navigate(['torneios/create']);
+  navigateToTorneioCreate(): void {
+    this.router.navigate(['torneio/create']);
   }
 }

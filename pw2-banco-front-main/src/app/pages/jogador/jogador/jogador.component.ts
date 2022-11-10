@@ -13,4 +13,7 @@ export class JogadorComponent implements OnInit {
   ngOnInit() {
   }
 
+  navigateToJogadorCreate(): void {
+    this.router.navigate(['jogador/create']);
+  }
 }

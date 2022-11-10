@@ -11,5 +11,6 @@ export interface Torneio {
   regras: string;
   organizacao: Organizacao;
   jogo: Jogo;
+  tipo: String;
   partidas: Partida[];
 }

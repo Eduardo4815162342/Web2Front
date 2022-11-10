@@ -22,9 +22,13 @@ export class OrganizacoesCreateComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.fb.group({
-      nome: [null, [Validators.required]],
+      nomeFantasia: [],
+      email: [null, [Validators.required]],
+      cnpj: [null, [Validators.required]],
+      password: [null,[Validators.required]],
+      razaoSocial: [null, [Validators.required]]
     });
-  }
+  } 
 
 
   save(): void{

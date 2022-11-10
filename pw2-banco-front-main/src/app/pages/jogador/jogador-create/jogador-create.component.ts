@@ -23,7 +23,9 @@ export class JogadorCreateComponent implements OnInit {
   ngOnInit() {
     this.form = this.fb.group({
       nome: [null, [Validators.required]],
-
+      nickname: [null, [Validators.required]],
+      email: [null, [Validators.required]],
+      password: [null, [Validators.required]],
     });
   }
 
